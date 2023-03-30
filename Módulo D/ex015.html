@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+    <style>
+        body>h1 {
+            text-align: center;
+            color: rgb(197, 30, 30);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Resultado das Avaliações</h1>
+    Nota: <input type="number" name="num" id="num">
+    <input type="button" value="Verficar" onclick="Calcular()">
+
+    <div id="res"></div>
+
+    <script>
+        function Calcular(){
+            var num = document.getElementById('num')
+            var res = document.getElementById('res')
+            res.innerHTML = `Parabéns pelo seu esforço`
+            if (num.value >= 5){
+            res.innerHTML += `<p> Voce foi Aprovado</p>`
+            } else 
+            res.innerHTML += `<p> Voce foi Reprovado</p>`
+        }
+    </script>
+        
+      
+
+     
+</body>
+
+</html>
